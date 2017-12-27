@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>RIDI: Rubost IMU Double Integration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/cayman.css">
+    <link rel="stylesheet" href="../css/erik.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">RIDI: Rubost IMU Double Integration</h1>
+      <h2 class="project-tagline"><a class="site-link" href="http://www.cse.wustl.edu/~yanhang">Hang Yan</a>, <a class="site-link" href="http://shanqi.github.io/">Qi Shan</a> and <a class="site-link" href="http://http://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa</a></h2>
+    </section>
+
+    <section class="main-content">
+      <h2>Abstract</h2>
+      <p>This paper proposes a novel data-driven approach for inertial navigation, which learns to estimate trajectories of natural human motions just from an inertial measurement unit (IMU) in every smartphone. The key observation is that human motions are repetitive and consist of a few major modes (e.g., standing, walking, or turning). Our algorithm regresses a velocity vector from the history of linear accelerations and angular velocities, then corrects low-frequency bias in the linear accelerations, which are integrated twice to estimate positions. We have acquired training data with ground-truth motions across multiple human subjects and multiple phone placements (e.g., in a bag or a hand). The qualitatively and quantitatively evaluations have demonstrated that our algorithm has surprisingly shown comparable results to full Visual Inertial navigation. To our knowledge, this paper is the first to integrate sophisticated machine learning techniques with inertial navigation, potentially opening up a new line of research in the domain of data-driven inertial navigation. We will publicly share our code and data to facilitate further research.</p>
+
+        <h2>Paper</h2>
+        <p><a href="https://arxiv.org/abs/1712.09004">Main paper</a></p>
+        <h2>Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r3yyL6qrVX4" frameborder="0" allowfullscreen></iframe>
+
+        <h2>Acknowledgement</h2>
+        <p>This research is partially supported by National Science Foundation under grant IIS 1540012 and IIS 1618685, Google Faculty Research Award.</p>
+        
+
+        <footer class="site-footer">
+          <span class="site-footer-owner"> <a href="http://www.cse.wustl.edu/~yanhang">Hang Yan@2017</a></span>
+          <span class="site-footer-credits"> This page adopts <a href="https://github.com/jasonlong/cayman-theme">Cayman</a> Theme.</span>
+        </footer>
+
+      </section>
+    </body>
+    </html>
